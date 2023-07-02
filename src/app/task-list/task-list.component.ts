@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Route } from '@angular/router';
 
 @Component({
   selector: 'app-task-list',
@@ -10,9 +11,11 @@ export class TaskListComponent implements OnInit {
 
 	title = 'Todo list';
 
-	constructor() {}
+	constructor(private route: ActivatedRoute) {}
 
 	ngOnInit(): void {
+		let date: Date = new Date(this.route.snapshot.params['date']);
+		console.log(date);
 	}
 
 	tasks: Task[] = [
