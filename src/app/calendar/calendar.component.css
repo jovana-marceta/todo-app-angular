@@ -1,0 +1,8 @@
+.calendar-container {
+    display: flex;
+    justify-content: center;
+}
+
+mat-calendar {
+    width: 500px;
+}
