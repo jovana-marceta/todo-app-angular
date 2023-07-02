@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-}
+    }
 
 .todo-list {
     display: flex;
@@ -87,4 +87,18 @@ tr {
 
 td {
     margin-left: 1rem;
+}
+
+.even {
+    background-color: rgb(44, 44, 44);
+    color: rgb(255, 255, 255);
+}
+
+.odd {
+    background-color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+}
+
+.is-done {
+    text-decoration: line-through;
 }
